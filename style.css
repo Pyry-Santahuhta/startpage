@@ -1,143 +1,147 @@
+/*
+Colors
+E69597 pastel pink
+93B7BE blue
+F1FFFA mint
+2F4858 charcoal blue
+454545 onyx
+*/
+body {
 
-body{
-    border-radius: 2px;
-    color: #c5c8c6;
-    display: flex;
-    flex-direction: column;
-    min-height: 15ch;
-    min-width: 40vw;
-    padding: 2em;
-    font: 22px/1 "Courier";
-    
-}
+  color:#c5c8c6;
+  display:grid;
+  grid-auto-flow: column;
+  column-gap: 25px;
+  min-height:15ch;
+  font:22px/1 Courier;
 
-html{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2F3E46;
-}
-    
-
+  }
+  
+  html {
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#454545;
+  }
+  
   .item {
-    width: 10em;
-}
-
-p {
-    margin: 0;
+  width:10em;
   }
-
+  
+  p {
+  margin:0;
+  }
+  
   p span {
-   
-    color: #D0CD94;
+  color:#F1FFFA;
   }
+  
   a {
-    color: inherit;
-    display: block;
-    width: 150px;
-    text-decoration: none;
+  color:inherit;
+  display:block;
+  width:150px;
+  text-decoration:none;
   }
-
+  
   a:hover {
-    font-weight: bolder;
-    
+  font-weight:bolder;
   }
-  .image img{
-    width: 200px;
+  
+  .image img {
+  width:350px;
   }
-
-  .gifgirl img{
-
-    /* change this to get gifs */
-    display: none;
-    
-    vertical-align: bottom;
-    width: 130px;
-  }
-
+  
+  
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type:none;
+
+  padding:0;
   }
 
   nav {
-    column-gap: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 0;
-    
-  }
-
-
-  .dropdownbox{
-    perspective: 1000px;
-    padding: 30px 0;
-    text-align: center;
-    width: 150px;
-    background-color: #354F52;
-    box-shadow: 5px 5px 6px #1b1e2087;
-    
-  } 
+  column-gap:2em;
+  display:flex;
+  justify-content:space-between;
   
-
-  /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  top: 100%;
-  
-  position:absolute;
-  display: none;
-  width: 150px;
-  
-  animation: growDown 300ms ease-in-out forwards;
-  transform-origin: top center;
-  color: #101618;
-  line-height: 60px;
-  
-  background-color: #52796F;
-
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-} 
-
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #52796F;
-}
-
-.dropdownbox:hover{
-  background-color: #52796F;
-}
-
-/* Show the dropdown menu on hover */
-.dropdownbox:hover .dropdown-content {
-  display: block;
-  background-color: #354F52;
-}
-.dropdownbox:hover .dropdown_menu li{
-  display: block;
-  opacity: 1;
-}
-
-@keyframes growDown {
-  0% {
-      transform: scaleY(0);
+  padding:1em 0;
   }
-  80% {
-      transform: scaleY(1.1);
-  }
-  100% {
-      transform: scaleY(1);
-  }
-}
+  
+  .dropdownbox {
+  perspective:1000px;
+  padding:30px 0;
+  text-align:center;
+  width:150px;
+  background-color:#DC6A6C;
 
+  animation:growDown 300ms ease-in-out forwards;
+  position: relative;
+  }
  
-/* 
-  colors:
-darkblu #1F2633
-charcoal #2F394C
-yellow text #D0CD94
-# 4B4449
-*/
+  .dropdown-content {
+    display: none;
+    
+    position:absolute;
+    top:100%;
+    animation:growDown 300ms ease-in-out forwards;
+    transform-origin:top;
+    color:#101618;
+    line-height:60px;
+    background-color:#93B7BE;
+  }
+ 
+  .dropdown-content li {
+    display:none;
+    opacity:0;
+  }
+
+
+  .dropdown-content a:hover {
+  background-color:#DC6A6C;
+  }
+  
+  .dropdownbox:hover .dropdown-content {
+    display:block;
+    opacity:1;
+    }
+  .dropdownbox:hover .dropdown-content li {
+  display:block;
+  opacity:1;
+  }
+
+    
+  @keyframes growDown {
+  0% {
+  transform:scaleY(0);
+
+  }
+  
+  80% {
+  transform:scaleY(1.1);
+
+  }
+  
+  100% {
+  transform:scaleY(1);
+
+  }
+  }
+
+  form input[type="search"] {
+    border: none;
+    box-sizing: border-box;
+    width: 350px;
+    font-weight: bold;
+    text-align: center;
+    font: inherit;
+    background-color: #354F52;
+    padding: .5em 1em;
+    outline: none;
+    color: #D0CD94;
+  }
+  
+  form input::placeholder {
+    color: #52796F;
+    opacity: 1;
+  }
+  
