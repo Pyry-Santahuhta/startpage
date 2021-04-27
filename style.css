@@ -7,22 +7,17 @@ F1FFFA mint
 454545 onyx
 */
 body {
-
-  
-  display:grid;
-  grid-auto-flow: column;
-  column-gap: 25px;
-  min-height:15ch;
-  
-
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  height: auto;
+  margin-top: 500px;
   }
   
   html {
-  height:100%;
+  background-color:#414770;
   display:flex;
-  align-items:center;
   justify-content:center;
-  background-color:#454545;
   }
   
   .item {
@@ -45,15 +40,15 @@ body {
   
 
   .image img {
-  width:350px;
+  width:600px;
+  margin-top: 5%;
   }
   
   nav {
-  column-gap:2em;
-  display:flex;
-  justify-content:space-between;
-  
-  padding:1em 0;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    align-self: center;
   }
   
 
@@ -91,7 +86,7 @@ body {
 
     color:#101618;
     line-height:150px;
-    background-color:#93B7BE;
+    background-color:#7D85B5;
   
   }
  
@@ -107,7 +102,7 @@ body {
 }
 
   .boxcontainer a:hover {
-  background-color:#DC6A6C;
+  background-color:#B1B7D2;
   }
   
   .boxcontainer:hover .dropdownbox {
